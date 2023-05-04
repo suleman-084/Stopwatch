@@ -16,8 +16,8 @@
 
 **Build a Stopwatch app which starts by pressing the button start and stop by stop button also there is a reset button.**
 
-**Created By**: Syed Ibrahim Shikalgar
+**Created By**: Mohammed Suleman
 
-**Time took to complete this project**: 3 Hours
+**Time took to complete this project**: 4 Hours
 
-## [**Live-link**]() of the project
+## [**Live-link**](https://stopwatch-using-js-html-css.netlify.app/) of the project
