@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Stopwatch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" defer></script>
+    <!-- <link rel="stylesheet" href="./script.js" /> -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[#2c3e50] mt-[15rem]">
+    <div class="container flex flex-col items-center">
+      <div class="time mb-[50px]">
+        <span class="digit text-[70px] font-[500]" id="hr">00</span>
+        <span class="txt mr-[30px] text-[20px] font-[500]">Hr</span>
+        <span class="digit text-[70px] font-[500]" id="min">00</span>
+        <span class="txt mr-[30px] text-[20px] font-[500]">Min</span>
+        <span class="digit text-[70px] font-[500]" id="sec">00</span>
+        <span class="txt mr-[30px] text-[20px] font-[500]">Sec</span>
+        <span class="digit text-[70px] font-[500]" id="count">00</span>
+        <span class="txt mr-[30px] text-[20px] font-[500]">Ms</span>
+      </div>
+      <div class="btn">
+        <button
+          class="button mr-[50px] text-[30px] border-[2px] border-[#0ABF51] bg-[#0ABF51] px-[10px] rounded-[5px]"
+          id="start"
+          onclick="start()"
+        >
+          Start
+        </button>
+        <button
+          class="button mr-[50px] text-[30px] border-[2px] border-[#0A78BF] bg-[#0A78BF] px-[10px] rounded-[5px]"
+          id="stop"
+          onclick="stop()"
+        >
+          Stop
+        </button>
+        <button
+          class="button mr-[50px] text-[30px] border-[2px] border-[#E7402A] bg-[#E7402A] px-[10px] rounded-[5px]"
+          id="reset"
+          onclick="reset()"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
